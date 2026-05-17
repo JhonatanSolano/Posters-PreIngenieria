@@ -1,0 +1,92 @@
+.login-bg {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(27,42,74,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(200,151,42,0.08) 0%, transparent 50%),
+    var(--bg);
+}
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(27,42,74,0.13);
+  overflow: hidden;
+}
+.login-header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 36px 32px 28px;
+  text-align: center;
+  color: #fff;
+}
+.login-icon-wrap {
+  width: 56px;
+  height: 56px;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+.login-title { font-family: var(--font-display); font-size: 1.6rem; color: #fff; margin-bottom: 8px; }
+.login-subtitle { font-size: 0.88rem; color: rgba(255,255,255,0.75); line-height: 1.5; }
+.login-form {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.input-icon-wrap { position: relative; }
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+.form-input.with-icon { padding-left: 38px; }
+.form-input.with-suffix { padding-right: 40px; }
+.input-suffix-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: flex;
+  padding: 4px;
+}
+.input-suffix-btn:hover { color: var(--navy); }
+.login-submit { width: 100%; justify-content: center; padding: 13px; font-size: 0.97rem; margin-top: 4px; }
+.login-note {
+  padding: 16px 32px;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+  background: var(--bg-panel);
+  line-height: 1.5;
+}
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 480px) {
+  .login-form, .login-header { padding-left: 20px; padding-right: 20px; }
+  .login-note { padding-left: 20px; padding-right: 20px; }
+}
