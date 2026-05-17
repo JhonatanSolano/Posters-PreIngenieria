@@ -2,7 +2,7 @@
 ### Ciclo de Profundización: PreIngeniería 2026
 ### Politécnico Los Alpes
 
-Plataforma web académica para la presentación y consulta pública de pósters estudiantiles del curso de Cálculo Diferencial, Integral y Álgebra Lineal.
+Plataforma web académica para la presentación y consulta pública de pósters estudiantiles del curso de PreIngeniería sobre Cálculo Diferencial, Integral y Álgebra Lineal.
 
 ---
 
